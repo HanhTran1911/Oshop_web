@@ -2,7 +2,7 @@
     body {
 
         width: 480px;
-        overflow-x: hidden !important;
+        overflow-x: hidden ;
     }
 
     header {
@@ -89,7 +89,7 @@
         padding-top: 20px;
         padding-left: 30px;
         padding-right: 14px;
-        background-color: aqua;
+        background-color: bisque;
         z-index: 6;
     }
 

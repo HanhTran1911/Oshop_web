@@ -16,12 +16,13 @@ div{
 }
 */
 .margin_bottom_p {
-    margin-bottom: 0 !important;
+    margin-bottom: 2px;
 }
 
 .none_laptop {
     display: none;
 }
+
 .container-custom {
     width: 1168px;
     margin-left: auto;
@@ -31,7 +32,7 @@ div{
 .headertop {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 7px;
     width: 1168px;
     margin-left: auto;
     margin-right: auto;
@@ -45,18 +46,18 @@ div{
 .left_item {
     text-decoration: none;
     color: black;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 12px;
     margin-right: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 .headertop__right {
     margin-left: auto;
+    margin-top: 2px;
 }
 
 .dropdown-item:hover {
     font-weight: 500;
-
 }
 
 /* header */
@@ -76,15 +77,20 @@ div{
     flex-grow: 1;
     display: flex;
     align-items: center;
+    margin-top: -10px;
 }
-.hr_header{
+
+.hr_header {
     margin-top: 5px;
+    color: #b4b3b3;
+    margin-bottom: 11px;
 }
+
 input.search {
     border: none;
     font-size: 13px;
     font-weight: 600;
-    padding-top: 4px;
+
     padding-left: 18px;
     width: 145px;
     flex-grow: 1;
@@ -129,6 +135,7 @@ input:focus {
 .icon1 {
     margin-right: 23px;
     position: relative;
+    margin-top: -2px;
 }
 
 .icon1 p {
@@ -249,7 +256,7 @@ input:focus {
 }
 
 .icon4 {
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 .dropdown-content-item {
@@ -371,7 +378,23 @@ input:focus {
     flex-grow: 1;
     text-align: end;
 }
-
+/* dropdown content */
+.dropdown__content{
+    height: 310px; margin-top: 0; 
+    position: relative;
+    animation: mymove_dropdown 1s ;
+}
+.dropdown-content.open {
+    max-height: 200px;
+  }
+@keyframes mymove_dropdown {
+    0%{
+    height: 10px;
+    }
+    100% {
+      height: 100px;
+    }
+  }
 .item-dropdown-left {
     padding-right: 20px;
 }
@@ -387,43 +410,6 @@ input:focus {
 
 .nav-item {
     margin-right: 30px;
-}
-
-.dropdownContent {
-    display: none;
-    margin-left: 7px;
-    padding-top: 5px;
-    margin-top: 244px;
-    padding-bottom: 10px;
-    background: white;
-    position: absolute;
-    z-index: 3;
-    opacity: 0;
-    transition: opacity 2s ease;
-}
-
-.dropdownContent2 {
-    display: none;
-    margin-left: 7px;
-    padding-top: 5px;
-    margin-top: 244px;
-    padding-bottom: 10px;
-    background: white;
-    position: absolute;
-    z-index: 4;
-}
-
-.dropdown_content1 {
-    display: none;
-    position: absolute;
-    top: 58px;
-    left: -415px;
-    width: 1170px;
-    padding: 30px;
-    background-color: white;
-    z-index: 2;
-    margin-top: -10px;
-
 }
 
 .dropdown_left {
@@ -481,6 +467,57 @@ input:focus {
     display: flex;
     align-items: center;
     padding-bottom: 28px;
+}
+
+.dropdownContent {
+    display: none;
+    margin-left: 7px;
+    padding-top: 5px;
+    margin-top: 244px;
+    padding-bottom: 10px;
+    background: white;
+    position: absolute;
+    z-index: 3;
+    animation: mymove 1s;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+@keyframes mymove {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.dropdownContent2 {
+    display: none;
+    margin-left: 7px;
+    padding-top: 5px;
+    margin-top: 244px;
+    padding-bottom: 10px;
+    background: white;
+    position: absolute;
+    z-index: 4;
+    animation: mymove 1s;
+}
+
+.dropdown_content1 {
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: -415px;
+    width: 1170px;
+    padding: 30px;
+    background-color: white;
+    z-index: 2;
+    margin-top: -10px;
+    animation: mymove 1s;
+
 }
 
 .hover_nav1:hover .dropdownContent {
@@ -551,9 +588,13 @@ input:focus {
 .element {
     display: flex;
     margin-top: 30px;
-    padding: 30px;
+    padding: 28px 40px;
     justify-content: space-between;
     background-color: white;
+}
+
+.discription_element {
+    padding-top: 4px;
 }
 
 .shiping {
@@ -599,7 +640,7 @@ input:focus {
 
 /* game_World */
 .typeName {
-    padding-top: 100px;
+    padding-top: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -649,7 +690,7 @@ input:focus {
     font-size: 16px;
     line-height: 1.5rem;
     margin-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
 
 }
 
@@ -735,7 +776,7 @@ input:focus {
     flex-direction: column;
     opacity: 0;
     transform: translateX(100%);
-    transition: opacity 0.15s ease, transfor1m 0.2s ease;
+    transition: opacity 0.15s ease, transform 0.2s ease;
 }
 
 .item_product:hover .icon_right {
@@ -908,7 +949,7 @@ input:focus {
     width: 584px;
     height: 460px;
     margin-left: 30px;
-    padding: 35px 30px;
+    padding: 35px 50px;
 
 }
 
@@ -993,6 +1034,7 @@ input:focus {
 .topSell {
     display: grid;
     grid-template-columns: auto auto;
+    margin-top: 15px;
 }
 
 .margin_right {

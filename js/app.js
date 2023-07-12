@@ -49,3 +49,13 @@ var x = setInterval(function () {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+// dropdown
+document.addEventListener('DOMContentLoaded', function () {
+    var dropdownBtn = document.querySelector('.btn__AllCte');
+    var dropdownContent = document.querySelector('.dropdown__content');
+
+    dropdownBtn.addEventListener('click', function () {
+        dropdownContent.classList.toggle('open');
+    });
+});
