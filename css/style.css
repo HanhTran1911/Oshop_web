@@ -780,7 +780,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(50%);
     transition: opacity 0.15s ease, transform 0.2s ease;
 }
 
@@ -814,7 +814,7 @@ input:focus {
     bottom: 17px;
     z-index: 2;
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(50%);
     transition: opacity 0.15s ease, transform 0.2s ease;
 }
 
