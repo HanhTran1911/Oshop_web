@@ -15,6 +15,11 @@ div{
     font-family: 'Inter', sans-serif;
 }
 */
+/* kiem tra ki tu chu */
+.text_content{
+    margin-left: 6px;
+    text-overflow: ellipsis;
+}
 .margin_bottom_p {
     margin-bottom: 2px;
 }

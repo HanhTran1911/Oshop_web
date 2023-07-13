@@ -59,3 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdownContent.classList.toggle('open');
     });
 });
+
+//kiem tra ki tu 
+document.addEventListener('DOMContentLoaded', function () {
+    var contentText = document.querySelector('.text_content');
+  var maxLeght=5;
+  var text = contentText.textContent;
+  if(text.length>maxLeght)
+  {
+    text = text.substring(0 , maxLeght)+ '...';
+  }
+  contentText.textContent = text;
+});
