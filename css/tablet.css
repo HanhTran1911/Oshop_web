@@ -47,12 +47,12 @@
     .content_header_hover {
         display: none;
         width: 280px;
-        height: 100vh;
+        height: 105vh;
         position: absolute;
         left: -19px;
         top: -44px;
         padding: 20px 20px;
-        background-color: aqua;
+        background-color: bisque;
         z-index: 6;
     }
 
