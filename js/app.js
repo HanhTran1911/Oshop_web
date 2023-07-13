@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //kiem tra ki tu 
 document.addEventListener('DOMContentLoaded', function () {
     var contentText = document.querySelector('.text_content');
-  var maxLeght=5;
+  var maxLeght=20;
   var text = contentText.textContent;
   if(text.length>maxLeght)
   {
